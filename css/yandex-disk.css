@@ -1,0 +1,11 @@
+body{
+	font-family: Arial;
+}
+
+.inline {
+	float: left;
+}
+
+#token {
+	width: 350px;
+}
