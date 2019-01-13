@@ -9,3 +9,5 @@ body{
 #token {
 	width: 350px;
 }
+
+.ui-menu { width: 150px; }

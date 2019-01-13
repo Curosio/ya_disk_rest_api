@@ -4,7 +4,11 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="initial-scale=1">
 		<link rel="stylesheet" href="/css/yandex-disk.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  		<link rel="stylesheet" href="//jqueryui.com/resources/demos/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="/js/yandex-disk.js"></script>
 	</head>
 	<body>
 		<header class="H7Vsq4Kf28Yjf3k07O-KU" data-reactid="2">
@@ -12,7 +16,7 @@
       <!-- react-empty: 4 -->
       <a href="https://tech.yandex.ru/disk/poligon/" target="_BLANK" >Полигон</a>
 		
-         	Polygon Test Token: <input type="text" placeholder="Polygon Token" id="token" value="AQAAAAAS-1XXAADLWxZipMeACkHZp8KGdAI2coM" /> <button>Войти</button>
+         	Polygon Test Token: <input type="text" placeholder="Polygon Token" id="token" value="AQAAAAAS-1XXAADLWxZipMeACkHZp8KGdAI2coM" /> <button id="enter">Войти</button>
 
 			<hr/>
       <div class="header__side-left" data-reactid="5" >
@@ -26,6 +30,53 @@
             </svg>
          </span>
       </div>
+
+
+
+	<hr/>	
+	<br/>
+	Directories:
+
+<ul id="menu">
+  <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+  <li><div>Books</div></li>
+  <li><div>Clothing</div></li>
+  <li><div>Electronics</div>
+    <ul>
+      <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+      <li><div>Car Hifi</div></li>
+      <li><div>Utilities</div></li>
+    </ul>
+  </li>
+  <li><div>Movies</div></li>
+  <li><div>Music</div>
+    <ul>
+      <li><div>Rock</div>
+        <ul>
+          <li><div>Alternative</div></li>
+          <li><div>Classic</div></li>
+        </ul>
+      </li>
+      <li><div>Jazz</div>
+        <ul>
+          <li><div>Freejazz</div></li>
+          <li><div>Big Band</div></li>
+          <li><div>Modern</div></li>
+        </ul>
+      </li>
+      <li><div>Pop</div></li>
+    </ul>
+  </li>
+  <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+</ul>
+
+
+<br/>
+</hr>
+
+<br/>
+Files:
+<hr/>
       <div class="header__side-center inline" data-reactid="12">
          <button class="button2 button2_view_default button2_tone_default button2_size_n button2_theme_raised button2_action_yes W8NcOB8eIit2Ho1omZl3p" type="button" autocomplete="off" aria-pressed="false" tabindex="0" aria-disabled="false">
             <span class="ufo-icon ufo-icon_size_n icon button2__icon button2__icon_side_left">
@@ -83,17 +134,18 @@
             <!-- react-empty: 86 -->
          </span>
          <div class="user2 user2_provider_null user2 user2_hide-name user2 user2_hide-name" data-reactid="15">
-         	
+         	<br/>
             <a class="user-account user-account_provider_null user-account_has-accent-letter_yes user2__current-account user2__current-account" tabindex="0" href="https://passport.yandex.ru/" data-reactid="16">
                <div class="user-pic user-account__pic user-account__pic" data-reactid="17">
                   <div class="user-pic__image user-pic__image_lodpi_yes" style="background-image:url(https://avatars.mds.yandex.net/get-yapic/0/0-0/islands-middle);" data-reactid="18"></div>
                   <div class="user-pic__image user-pic__image_hidpi_yes" style="background-image:url(https://avatars.mds.yandex.net/get-yapic/0/0-0/islands-retina-middle);" data-reactid="19"></div>
                </div>
                <span class="user-account__name user-account__name_hasAccentLetter" data-reactid="20">
-                  <span class="user-account__accent-letter" data-reactid="21">a</span><!-- react-text: 22 -->n@mykassa.ru<!-- /react-text -->
+                  <span class="user-account__accent-letter" data-reactid="21"></span><!-- react-text: 22 --><span id="email"></span><!-- /react-text -->
                </span>
-            </a>
-            <a class="link link_theme_pseudo user2__a11y-exit a11y-hidden user2__a11y-exit a11y-hidden" href="https://passport.yandex.ru/passport?mode=embeddedauth&amp;action=logout&amp;yu=8850503881519644345&amp;uid=1130000027603882&amp;retpath=https%3A%2F%2Fdocviewer.yandex.ru%2Fview%2F1130000027603882%2F%3FforceDefaultAccount%3D1%26*%3DcZYYlymgwb8LbVljfFcbDgPOw1V7InVybCI6InlhLW1haWw6Ly8xNjc0Nzc2MTExNDI4NDU5MTgvMS4yIiwidGl0bGUiOiLQndCwINGP0LfRi9C60LUgSlMuZG9jeCIsInVpZCI6IjExMzAwMDAwMjc2MDM4ODIiLCJ5dSI6Ijg4NTA1MDM4ODE1MTk2NDQzNDUiLCJub2lmcmFtZSI6ZmFsc2UsInRzIjoxNTQ3MjA4NTI1MDc0fQ%253D%253D%26page%3D1" tabindex="-1" accesskey="x" data-reactid="23">
+            </a> 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="link link_theme_pseudo user2__a11y-exit a11y-hidden user2__a11y-exit a11y-hidden fr" href="https://passport.yandex.ru/passport?mode=embeddedauth&amp;action=logout&amp;yu=8850503881519644345&amp;uid=1130000027603882&amp;retpath=https%3A%2F%2Fdocviewer.yandex.ru%2Fview%2F1130000027603882%2F%3FforceDefaultAccount%3D1%26*%3DcZYYlymgwb8LbVljfFcbDgPOw1V7InVybCI6InlhLW1haWw6Ly8xNjc0Nzc2MTExNDI4NDU5MTgvMS4yIiwidGl0bGUiOiLQndCwINGP0LfRi9C60LUgSlMuZG9jeCIsInVpZCI6IjExMzAwMDAwMjc2MDM4ODIiLCJ5dSI6Ijg4NTA1MDM4ODE1MTk2NDQzNDUiLCJub2lmcmFtZSI6ZmFsc2UsInRzIjoxNTQ3MjA4NTI1MDc0fQ%253D%253D%26page%3D1" tabindex="-1" accesskey="x" data-reactid="23">
                <!-- react-text: 24 -->Выйти<!-- /react-text -->
             </a>
             <!-- react-empty: 25 -->
@@ -101,8 +153,11 @@
       </div>
    </div>
 </header>
-		
-		
+	
+
+
+
+
 	</body>
 </html>
 	
