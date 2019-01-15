@@ -10,4 +10,25 @@ body{
 	width: 350px;
 }
 
-.ui-menu { width: 150px; }
+.ui-menu { width: 350px; }
+
+#contmy {
+	visibility: hidden;
+}
+
+.directory{
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+.file{
+	cursor: pointer;
+}
+
+#root{
+	cursor: pointer;
+}
+
+.activefile{
+	color: #55FF55;
+}
